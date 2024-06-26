@@ -73,7 +73,7 @@
 	let processing = '';
 	let messagesContainerElement: HTMLDivElement;
 
-	let showModelSelector = true;
+	let showModelSelector = false;
 
 	let selectedModels = [''];
 	let atSelectedModel: Model | undefined;
@@ -400,7 +400,7 @@
 					role: 'assistant',
 					content: '',
 					model: model.id,
-					modelName: model.name ?? model.id,
+					modelName:  model.name ?? model.id,
 					userContext: null,
 					timestamp: Math.floor(Date.now() / 1000) // Unix epoch
 				};
